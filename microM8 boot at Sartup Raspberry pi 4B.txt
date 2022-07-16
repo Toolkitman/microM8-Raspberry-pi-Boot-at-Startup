@@ -1,0 +1,29 @@
+Here the move to do it: You need a Raspbian distribution, i used the one from my Linapple from reactivemicro wiki i built previously downloading it here:https://wiki.reactivemicro.com/Linapple_Raspberrypi booting it and from terminal i wrote sudo apt-get update and then sudo apt-get upgrade after it, removing with sudo nano etc/rc.local the executable pom1 string from terminal window. Then i have set the monitor to a lover 16:9 resolution with sudo raspi-config from terminal. I have also configured the keyboard to us layout like mine from sudo raspi-config from terminal then localisation then keyboard layout. Ok now.....
+
+download microM8
+
+expand it in Download folder.
+
+Now make it start at boot:
+
+write this in terminal: sudo nano /home/pi/.config/autostart/clock.desktop
+
+and copy paste this code with mouse click
+
+[Desktop Entry] Type=Application Name=TIC-80 Exec=/home/pi/Downloads/microM8 --fullscreen
+
+press control X and Yes and return
+
+go to the raspberry menu and open preferences-Main menu editor-Preferences and mark the Desktop Session Settings
+
+click ok
+
+Go to Menu Preferences-Desktop Session Settings-and mark microM8
+
+reboot
+
+It should go!!!!
+
+Enjoy your new microM8 Computer
+
+To close it press left mouse button on the top left corner of microM8 and choose quit.
